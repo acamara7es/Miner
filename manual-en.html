@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>manual-en</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body id="preview" class="container">
+	<h1><a id="Minesweeper_0"></a>Minesweeper</h1>
+	<h2><a id="Objective_of_the_game_2"></a>Objective of the game</h2>
+	<p>In spite of the name, the game consists in discovering all the boxes of the board that <strong>not</strong> contains mines, avoiding the ones they have</p>
+	<h2><a id="How_to_play_6"></a>How to play</h2>
+	<ul>
+		<li>To open a box simply click on it, see that it has changed its contents by:
+			<ul>
+				<li><strong>A number</strong> between 1 and 8: There are that number of mines near the cell.</li>
+				<li><strong>Void</strong>: There are no mines nearby. Cells are automatically opened until “numbered” cells are found.</li>
+				<li><strong>A mine with red background</strong>: Bad luck :( You have hit a mine and you have lost the game.</li>
+			</ul>
+		</li>
+		<li>You can lock a cell with a long press and a flag will appear. To be able to open the cell, again make a long press.</li>
+		<li>To start a new game click on the face button.</li>
+	</ul>
+	<h2><a id="Game_Modes_15"></a>Game Modes</h2>
+	<p>This game has 3 different predefined levels and the possibility of creating new configurations with the limitations (for usability) that appear in the following table:</p>
+	<table class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>Level</th>
+				<th>Size</th>
+				<th>Mines</th>
+				<th>% Mines</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Easy</td>
+				<td>8</td>
+				<td>6</td>
+				<td>9.375%</td>
+			</tr>
+			<tr>
+				<td>Intermediate</td>
+				<td>10</td>
+				<td>15</td>
+				<td>15%</td>
+			</tr>
+			<tr>
+				<td>Expert</td>
+				<td>12</td>
+				<td>30</td>
+				<td>20.83%</td>
+			</tr>
+			<tr>
+				<td>Custom</td>
+				<td>3 - 20</td>
+				<td>1 - 80% cells</td>
+				<td>0.25% - 80%</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2><a id="Sounds_25"></a>Sounds</h2>
+	<p>If you have pressed in a cell without a mine you will hear a sound that identifies the contents of the cell.</p>
+	<ul>
+		<li>If you hear a beep, there are an odd number of mines nearby.</li>
+		<li>If you hear 2 beeps, there are an even number of mines nearby.</li>
+		<li>The more mines there are, the sharper it will be. Therefore, the most tomb sounds are for 1 or 2 mines, and the sharpest for 7 or 8 mines.</li>
+		<li>If you press on an empty cell you will hear a scale with the 4 sounds used in the previous cases (from serious to sharp).</li>
+	</ul>
+	<p>When the game is over there is also a scale of sounds, from the most serious to the sharpest if you win, and from sharpest to the most serious if you lose.</p>
+
+</body>
+
+</html>

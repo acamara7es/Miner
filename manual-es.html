@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>manual-es</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body id="preview" class="container">
+	<h1><a id="Buscaminas_0"></a>Buscaminas</h1>
+	<h2><a id="Objetivo_del_juego_2"></a>Objetivo del juego</h2>
+	<p>A pesar del nombre, el juego consiste en descubrir todas las casillas del tablero que <strong>no</strong> contienen minas, evitando las que sí<br> tienen la tienen.</p>
+	<h2><a id="Como_se_juega_7"></a>Como se juega</h2>
+	<ul>
+		<li>Para abrir una casilla simplemente pulsa sobre ella, podrás ver que ha cambiado su contenido por:
+			<ul>
+				<li><strong>Un número</strong> entre el 1 y el 8: Hay ese número de minas cerca de la celda.</li>
+				<li><strong>Vacío</strong>: No hay minas cerca. Se abren automáticamente celdas hasta encontrar celdas “con número”.</li>
+				<li><strong>Una mina con fondo rojo</strong>: Mala suerte :( Has tocado una mina y has perdido.</li>
+			</ul>
+		</li>
+		<li>Puedes bloquear una celda haciendo una pulsación larga y aparecerá una bandera.<br> Para poder abrir la celda vuelve a hacer una pulsación larga.</li>
+		<li>Para empezar una nueva partida pulsa en el botón de la cara.</li>
+	</ul>
+	<h2><a id="Modos_de_juego_17"></a>Modos de juego</h2>
+	<p>Este juego dispone de 3 niveles predefinidos diferentes y la posibilidad de crear nuevas configuraciones con las limitaciones<br> (por cuestiones de usabilidad) que aparecen en la siguiente tabla:</p>
+	<table class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>Nivel</th>
+				<th>Tamaño</th>
+				<th>Minas</th>
+				<th>% Minas</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Fácil</td>
+				<td>8</td>
+				<td>6</td>
+				<td>9.375%</td>
+			</tr>
+			<tr>
+				<td>Intermedio</td>
+				<td>10</td>
+				<td>15</td>
+				<td>15%</td>
+			</tr>
+			<tr>
+				<td>Experto</td>
+				<td>12</td>
+				<td>30</td>
+				<td>20.83%</td>
+			</tr>
+			<tr>
+				<td>Personalizado</td>
+				<td>3 - 20</td>
+				<td>1 - 80% celdas</td>
+				<td>0.25% - 80%</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2><a id="Sonidos_29"></a>Sonidos</h2>
+	<p>Si has pulsado en una celda sin mina escucharás un sonido que identifica el contenido de la celda.</p>
+	<ul>
+		<li>Si oyes un pitido, hay un número impar de minas cerca.</li>
+		<li>Si oyes 2 pitidos, hay un número par de minas cerca.</li>
+		<li>Cuantas más minas haya más agudo será. Por lo tanto, los sonidos más graves son para 1 o 2 minas, y los más agudos para 7 u 8 minas.</li>
+		<li>Si pulsas en una celda vacía oirás una escala con los 4 sonidos usados en el los casos anteriores (de grave a agudo).</li>
+	</ul>
+	<p>Cuando acaba la partida también oirás una escala de sonidos, de grave a agudo si ganas o de agudo a grave si pierdes.</p>
+
+</body>
+
+</html>
